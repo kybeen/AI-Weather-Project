@@ -23,13 +23,14 @@ https://data.kma.go.kr/cmmn/main.do
 
 ---
 ## 데이터 전처리
- [Train – 21379개]
-이미지 : final_train_images -> torch.Size([32, 6, 1, 100, 100])
-수치데이터 : final_train_x -> torch.Size([32, 6, 7])
-레이블 : final_train_y -> torch.Size([32, 3])
-
- [Test – 3139개]
-이미지 : final_test_images -> torch.Size([32, 6, 1, 100, 100])
-수치데이터 : final_test_x -> torch.Size([32, 6, 7])
-레이블 : final_test_y -> torch.Size([32, 3])
 ![image](https://user-images.githubusercontent.com/89764127/204334821-b27d4ad3-ceb9-45f2-a808-343438f38491.png)
+- 기상관측정보 데이터
+<img width="529" alt="image" src="https://user-images.githubusercontent.com/89764127/204335220-b8d44ae4-4a7e-4d1a-b6ed-ee2ee34fd98b.png">
+- 위성 영상 이미지
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/89764127/204335336-02578163-f95b-4eab-822c-b3373ff4c6f1.png">
+
+
+---
+## 최종 구현 모델
+CSV 날씨 데이터와 위성 영상 이미지 데이터를 각각의 LSTM 계층에 넣어준 뒤 각각의 output을 평균내는 방식의 모델을 설계했음
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/89764127/204335439-4200d32b-9d5f-4302-90b8-7fa56bc25d27.png">
