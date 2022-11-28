@@ -34,3 +34,8 @@ https://data.kma.go.kr/cmmn/main.do
 ## 최종 구현 모델
 CSV 날씨 데이터와 위성 영상 이미지 데이터를 각각의 LSTM 계층에 넣어준 뒤 각각의 output을 평균내는 방식의 모델을 설계했음
 <img width="613" alt="image" src="https://user-images.githubusercontent.com/89764127/204335439-4200d32b-9d5f-4302-90b8-7fa56bc25d27.png">
+
+---
+## 최종 모델 예측 결과
+<img width="614" alt="image" src="https://user-images.githubusercontent.com/89764127/204336093-6357c087-0ce5-4872-b1e8-8a74743b1b0c.png">
+
